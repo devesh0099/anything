@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
@@ -11,8 +10,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:7000/admin/login', { email, password });
-      localStorage.setItem('token', res.data.token);
+      localStorage.setItem('token', 'dummy-token'); // Optional: just to mimic login state
       navigate('/dashboard');
     } catch (err) {
       setError('Login Failed');

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./frontend/frontend.mjs | nodemon ./backend/backend.mjs"
+    "start": "nodemon ./backend/backend.mjs"
   },
   "keywords": [],
   "author": "",
